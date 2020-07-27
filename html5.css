@@ -1,0 +1,213 @@
+/*start global*/
+* {
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,Tahoma;
+}
+.clearfix{
+    clear:both;
+}
+ul{
+    list-style:none;
+}
+/*end global*/
+
+/*start head*/
+.mheader h1{
+    padding:20px;
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+/*end head*/
+/*start nav*/
+nav{
+    background-color:#808080;
+    padding:20px;
+    text-align:center;
+}
+nav ul li{
+    display:inline-block;
+    color:white;
+    font-size:20px;
+    margin:0 3px;
+
+}
+nav ul li:after{
+    content:"     |";
+}
+nav ul li:last-child:after{
+    content:" ";
+}
+nav ul li:hover{
+    cursor:pointer;
+}
+/*end nav*/
+/*start article*/
+
+.post{
+    width:70%;
+    float:left;
+}
+.post article{
+       margin:20px;
+    border:1px solid #d4d1d1;
+}
+.post article .subheader{
+    background-color:#4a4545;
+    color:white;
+    padding:20px;
+
+}
+abbr{
+    text-decoration:none;
+   background-color:rgba(227, 237, 31, 0.28);
+   border-radius:4px;
+}
+.post article section {
+    background-color:#f8f1f1;
+    padding:20px;
+}
+.post article .thform{
+    margin:20px;
+
+}
+.post article .thform input{
+    display:block;
+    margin:10px 0;
+
+}
+.post article form .file:after{
+    content:"*";
+    color:red;
+}
+/*end article*/
+/*start footer*/
+footer {
+    background-color:black;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+/*end footer*/
+/*start aside*/
+aside{
+    float:right;
+   width:30%;
+}
+aside section{
+    background-color:rgba(212, 209, 209, 0.32);
+    border:1px solid #f8f1f1;
+    margin: 20px 0;
+
+}
+aside section h3{
+    background-color:#717171;
+    color:white;
+    padding:20px;
+}
+aside section ul {
+    padding:20px;
+  
+}
+aside section ul li{
+    margin:10px 0;
+  
+}
+aside section ul li:hover{
+    cursor:pointer;
+}
+.m{
+    padding:20px;
+}
+aside section .fform{
+    margin:20px;
+
+}
+aside section .fform input{
+    display:block;
+    margin-bottom:10px;
+
+}
+aside section .sform{
+    margin:20px;
+}
+aside section .sform input{
+    display:block;
+    margin-bottom:10px;
+
+}
+/*end aside*/
+/*start details*/
+details ul {
+    padding:20px;
+}
+details ul li a{
+    text-decoration:none;
+
+}
+details ul li a:hover{
+   color:chocolate;
+
+}
+details:hover{
+    cursor:pointer;
+}
+/*end details*/
+/*start top button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f12020; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 40px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgba(112, 8, 8, 0.86); /* Add a dark-grey background on hover */
+}
+/*end top button*/
+main{
+    padding:20px;
+    text-align:center;
+    background-color:#f67901;
+}
+main h3{
+    font-family:'Arabic Typesetting';
+    font-size:50px;
+    font-weight:bold;
+}
+main h3:hover{
+    cursor:pointer;
+    color:#f5e90b;
+}
+#mdiv{
+
+    padding:20px;
+    text-align:center;
+    color:#ef0bc8;
+    background-color:white;
+    font-family:Arial,Tahoma;
+    font-size:30px;
+    display:none;
+    background-repeat:no-repeat;
+    background-size:50px;
+    background-position-x:800px;
+    background-position-y:15px;
+    
+   
+    
+}
