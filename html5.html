@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>html5</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/html5.css" />
+        <!--[if lt IE 9]>
+        <script src="html5shiv-master/dist/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="mheader">
+            <h1>html5 course</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>learn more</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+        <main>
+            <h3 onclick="m()">اضغطي هنا يا فلاوله</h3>
+        </main>
+        <div id="mdiv"> </div>
+        <div class="post">
+            <article>
+                <header class="subheader">
+                    <h3>Article N1</h3>
+                    <p>created by <abbr title="bassam mohamed elabassy">Bassam</abbr> at <time datetime="2020-7-20 18:40">jul, 20, 2020</time></p>
+                </header>
+                <section>
+                   <details>
+                       <summary>refrances</summary>
+                       <ul>
+                           <li><a href="#">html</a></li>
+                           <li><a href="#">css</a></li>
+                           <li><a href="#">html5</a></li>
+                           <li><a href="#">css3</a></li>
+                           <li><a href="#">javascript</a></li>
+                       </ul>
+                   </details>
+                </section>
+            </article>
+
+            <article>
+                <header class="subheader">
+                    <h3>Article N2</h3>
+                    <p>created by <abbr title="bassam mohamed elabassy">Bassam</abbr> at <time datetime="2020-7-20 18:40">jul, 20, 2020</time></p>
+                </header>
+                <section>
+                  download:  <progress max="10" value="5"></progress>
+                </section>
+            </article>
+
+            <article>
+                <header class="subheader">
+                    <h3>Article N3</h3>
+                    <p>created by <abbr title="bassam mohamed elabassy">Bassam</abbr> at <time datetime="2020-7-20 18:40">jul, 20, 2020</time></p>
+                </header>
+                <section>
+                    <details open>
+                        <summary>show figures</summary>
+                        <figure>
+                            <img src="photos/cat.jpg" alt="my cat" />
+                        </figure>
+                        <figcaption>my cat fig1-1</figcaption>
+
+                        <figure>
+                            <img src="photos/cat.jpg" alt="my cat" />
+                        </figure>
+                        <figcaption>my cat fig1-2</figcaption>
+                    </details>
+                </section>
+            </article>
+
+            <article>
+                <header class="subheader">
+                    <h3>Article N4</h3>
+                    <p>created by <abbr title="bassam mohamed elabassy">Bassam</abbr> at <time datetime="2020-7-20 18:40">jul, 20, 2020</time></p>
+                </header>
+                <video controls loop width="600" height="500" poster="photos/cat.jpg" 
+                       style="margin:20px 0; margin-left:80px">
+                    <source src="videos/001.mp4" type="video/mp4" />
+                    <source src="videos/001.ogg" type="video/ogg" />
+                    <source src="videos/001.webm" type="video/webm" />
+                    your browser does not support video tech
+                </video>
+            </article>
+
+            <article>
+                <header class="subheader">
+                    <h3>Article N5</h3>
+                    <p>created by <abbr title="bassam mohamed elabassy">Bassam</abbr> at <time datetime="2020-7-20 18:40">jul, 20, 2020</time></p>
+                </header>
+                <form action="" method="get" class="thform" id="mainform" novalidate>
+                    <input type="text" name="username" placeholder="username" />
+                    <input type="email" name="email" placeholder="email" autocomplete="off"  pattern="[A-Z]{5}"/>
+                    <input type="file" name="upload" multiple class="file"/>
+                    <input type="submit" name="submit" value="send" />
+                </form>
+                <input type="text" name="nname" placeholder="nick name" required form="mainform"/>
+                <input type="submit" name="send" value="send nick name" form="mainform" />
+            </article>
+
+        </div>
+        <aside>
+            <section class="links">
+                <h3>course list</h3>
+                <ul>
+                    <li>intro</li>
+                    <li>learn html5 </li>
+                    <li>lern css3</li>
+                    <li>learn javascript</li>
+                </ul>
+            </section>
+          <section>
+              <h3>meter</h3>
+              <div class="m">
+           result: <meter 
+                                 min="0"
+                                 max="1"
+                                 value=".5"
+                                 low=".3"
+                                 high=".8"
+                                 optimum=".5">
+                  </meter>
+              </div>
+          </section>
+            <section>
+                <h3>select your favourit course</h3>
+                <label style="margin-left:10px">data list : </label>
+                <input list="data" style="margin:20px" />
+                <datalist id="data" >
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="html5"></option>
+                    <option value="css3"></option>
+                    <option value="javascript"></option>
+                </datalist>
+            </section>
+            <section>
+                <h3>calc your age in days</h3>
+                <form oninput="result.value=' your age is '+parseInt(age.value)*parseInt(days.value)+' days'"
+                      class="fform">
+                    <label>enter your age </label>
+                    <input type="text" name="age" />
+                    <input type="hidden" name="days" value="365" />
+                    <output name="result"></output>
+                </form>
+            </section>
+
+            <section>
+                <h3>new form input</h3>
+                <form class="sform">
+                    <label>color</label>
+                    <input type="color" name="color" value="#000000"/>
+                    <label>range</label>
+                    <input type="range" name="range" min="0" max="10" value="0" />
+                    <label>number</label>
+                    <input type="number" name="number" min="1" max="100" value="1"/>
+                    <label>email</label>
+                    <input type="email" name="email" />
+                    <label>password</label>
+                    <input type="password" name="pass" />
+                    <label>search</label>
+                    <input type="search" name="serch" />
+                    <label>url</label>
+                    <input type="url" name="url" />
+                    <label>telephone</label>
+                    <input type="tel" name="telephone" />
+                    <label>time</label>
+                    <input type="time" name="time" />
+                    <label>date</label>
+                    <input type="date" name="date" />
+                    <label>date-time</label>
+                    <input type="datetime-local" name="datetime" />
+                    <label>month</label>
+                    <input type="month" name="month" />
+                    <label>week</label>
+                    <input type="week" name="week" />
+                    <input type="submit" name="submit" value="send"/>
+                </form>
+            </section>
+
+            <section>
+                <h3>Al-Baqara-maher-al-mueaqly</h3>
+                <audio controls loop >
+                    <source src="audios/maher-al-mueaqly-002-al-baqara-3066-525.mp3" type="audio/mp3" />
+                    <source src="audios/maher-al-mueaqly-002-al-baqara-3066-525.ogg" type="audio/ogg" />
+                    your browser does not support audio tech
+                </audio>
+            </section>
+        </aside>
+        <!--top bage button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            <p>copyright &copy;2020 <bdi>جميع الحقوق محفوظه</bdi></p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="js/html5.js"></script>
+    </body>
+</html>
